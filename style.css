@@ -13,36 +13,38 @@ body {
 * {
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  /* overflow: auto; */
 }
 .profile{
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 1.5vw;
 }
 #leftSidebar {
   grid-area: leftSidebar;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 2vw;
   background-color: #0b3c50;
   color: white;
   flex-shrink: 2;
-  width: 15vw;
   height: 100%;
 }
 #leftSidebar .icon {
+  size: 1vw;
   display: flex;
   justify-content: start;
-  gap: 1vw;
+  align-items: center;
+  gap: 1rem;
   padding-left: 1vw;
 }
 #leftSidebar .dash {
   display: flex;
-  font-size: 32px;
+  font-size: 2rem;
   justify-content: space-evenly;
   padding: 1vw;
+  flex-shrink: 2;
 }
 #leftSidebar > .tabs {
   font-size: xx-large;
@@ -52,18 +54,18 @@ body {
   padding: 12px;
 }
 #leftSidebar > .tabUp {
-  padding: 20px;
-  font-size: large;
+  padding: 1vw;
+  font-size: 1rem;
   justify-content: center;
   display: flex;
-  gap: 20px;
+  gap: 3vh;
   flex-direction: column;
 }
 
 #leftSidebar > .tabLow {
-  gap: 20px;
-  padding: 20px;
-  font-size: large;
+  gap: 3vh;
+  padding: 1vw;
+  font-size: 1rem;
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -82,22 +84,22 @@ body {
   /* border: 2px solid black; */
 }
 #main > .mainContain {
-  height: 82vh;
-  flex-shrink: 2;
+  height: 100%;
+  /* flex-shrink: 2; */
   display: grid;
-  padding: 0;
+  padding-bottom: 20vh;
   grid-template: 1fr 1fr 1fr/1fr 1fr;
 }
 #main > .heading {
-  padding-top: 10px;
-  margin-left: 20px;
+  padding-top: 1vw;
+  margin-left: 2vw;
   font-size: larger;
   font-weight: bold;
 }
 #main .block {
   /* border: 2px solid black; */
-  margin: 20px;
-  padding: 20px;
+  margin: 2vh;
+  padding: 2vw;
   flex-shrink: 2;
   position: relative;
   display: flex;
@@ -105,9 +107,9 @@ body {
   justify-content: center;
   background-color: white;
   align-items: center;
-  gap: 20px;
+  gap: 2vw;
   border-radius: 20px;
-  border-left: 10px solid #d5b310;
+  border-left: 1vh solid #d5b310;
 }
 #rightSidebarTop {
   grid-area: rightSidebarTop;
@@ -115,22 +117,25 @@ body {
 }
 #rightSidebarTop > .container {
   display: flex;
+  overflow:auto;
   flex-direction: column;
   height: 40vh;
-  margin-right: 10px;
-  width: 15vw;
-  padding: 10px;
+  margin-right: 1vw;
+  /* flex-shrink: 2; */
+  /* min-width: 8vw;
+  min-height: 10vh; */
+  padding: 1vw;
   border-radius: 20px;
   background-color: white;
-  font-size: 14px;
-  justify-content: space-evenly;
+  font-size: 1vw;
+  /* justify-content: space-evenly; */
   flex-direction: column;
 }
 #rightSidebarTop p {
   color: rgb(119, 119, 119);
 }
 #rightSidebarTop > .announce {
-  padding: 15px;
+  padding: 2vh;
   font-size: larger;
   font-weight: bold;
 }
@@ -139,13 +144,13 @@ body {
   background-color: #e2e8f0;
 }
 #rightSidebarLow > .trending {
-  padding: 10px;
+  padding: 2vh;
 }
 #rightSidebarLow > .extContain {
   height: 26vh;
   background-color: white;
-  margin-right: 10px;
-  padding: 10px;
+  margin-right: 1vw;
+  padding: 1vw;
   border-radius: 20px;
   display: flex;
   justify-content: space-evenly;
@@ -166,8 +171,10 @@ body {
   display: flex;
   justify-content: start;
   width: 50vw;
-  margin-left: 200px;
+  /* margin-left: 200px; */
+  margin-left: 11vw;
   height: 3vh;
+  padding-inline-start: 1vw;
   border-radius: 20px;
   background-color: #e2e8f0;
   border: none;
@@ -175,7 +182,7 @@ body {
 #top > .search{
   display: flex;
   align-items: center;
-  gap: 200px;
+  gap: 11vw;
 }
 .search > .mag{
   display: flex;
@@ -187,22 +194,41 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0px 150px;
+  margin: 0px 8vw;
+}
+.extContain .external{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 0.7vw;
 }
 .new,
 .upload,
 .share {
-  height: 40px;
-  width: 100px;
+  height: 4vh;
+  width: 5.5vw;
   border-radius: 20px;
   background-color: #0b3c50;
   color: white;
   font-size: 1rem;
   font-weight: bolder;
   border: none;
-  margin: 10px;
+  margin: 0.8vw;
 }
 
 #top > .buttons {
-  gap: 20px;
+  gap: 2vw;
+}
+
+.icon:hover, .announce:hover, .trending:hover , .heading:hover{
+  cursor:pointer;
+  text-decoration: underline;
+}
+
+.new:hover, .dash:hover, .upload:hover, .share:hover, .first:hover,.second:hover, .third:hover{
+  cursor: pointer;
+}
+#main img:hover{
+  cursor:pointer
 }
