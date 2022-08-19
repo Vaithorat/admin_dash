@@ -7,33 +7,66 @@
     <title>Admin Dashboard</title>
   </head>
   <link rel="stylesheet" href="style.css" />
-  <link href='https://css.gg/home-alt.css' rel='stylesheet'>
+
   <body>
     <div id="leftSidebar">
-      <div class="tabs">Dashboard</div>
+      <div class="dash">
+        <img src="./icons/view-dashboard-variant-outline.png" alt="Dashboard" />
+        <div class="tabs">Dashboard</div>
+      </div>
       <div class="tabUp">
         <div class="icon">
-            <i class="gg-home-alt"></i>
-            <div class="tabs">Home</div>
+          <img src="./icons/home.png" alt="Home" />
+          <p class="tabs">Home</p>
         </div>
-        <div class="tabs">Profile</div>
-        <div class="tabs">Messages</div>
-        <div class="tabs">History</div>
-        <div class="tabs">Tasks</div>
-        <div class="tabs">Communities</div>
+        <div class="icon">
+          <img src="./icons/account.png" alt="Profile" />
+          <p class="tabs">Profile</p>
+        </div>
+        <div class="icon">
+          <img src="./icons/message-reply-text.png" alt="Messages" />
+          <p class="tabs">Messages</p>
+        </div>
+        <div class="icon">
+          <img src="./icons/history.png" alt="History" />
+          <p class="tabs">History</p>
+        </div>
+        <div class="icon">
+          <img src="./icons/calendar-check.png" alt="Tasks" />
+          <p class="tabs">Tasks</p>
+        </div>
+        <div class="icon">
+          <img src="./icons/account-group-outline.png" alt="Communities" />
+          <p class="tabs">Communities</p>
+        </div>
       </div>
       <div class="tabLow">
-        <div class="tabs">Settings</div>
-        <div class="tabs">Support</div>
-        <div class="tabs">Privacy</div>
+        <div class="icon">
+          <img src="./icons/cog.png" alt="Settings" />
+          <p class="tabs">Settings</p>
+        </div>
+        <div class="icon">
+          <img src="./icons/face-agent.png" alt="Support" />
+          <p class="tabs">Support</p>
+        </div>
+        <div class="icon">
+          <img src="./icons/lock-open.png" alt="Privacy" />
+          <p class="tabs">Privacy</p>
+        </div>
       </div>
     </div>
     <div id="top">
-      <div class="search"><input type="text" /></div>
+      <div class="search">
+        <img class = "mag" src="./icons/magnify.png" alt="search" />
+        <p class="search1"><input type="text" /></p>
+      </div>
       <div class="profContain">
         <div class="profile">
-          <p>Hi there,</p>
-          <h3>Vaibhav Thorat</h3>
+          <img src="./icons/avatar.png" width="80px" alt="avatar" />
+          <div class="proText">
+            <p>Hi there,</p>
+            <h3>Vaibhav Thorat @(VaiThorat)</h3>
+          </div>
         </div>
         <div class="buttons">
           <button class="new">New</button>
@@ -51,6 +84,15 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
             quaerat earum, incidunt qui quasi facere?
           </p>
+          <div>
+            <img
+              class="img"
+              src="./icons/bookmark-multiple.png"
+              alt="Bookmark"
+            />
+            <img class="img" src="./icons/delete-forever.png" alt="delete" />
+            <img class="img" src="./icons/share-variant.png" alt="share" />
+          </div>
         </div>
         <div class="block">
           <h3>Impossible App</h3>
@@ -58,6 +100,11 @@
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum
             eiusarchitecto esse eveniet qui numquam.
           </p>
+          <div>
+            <img src="./icons/bookmark-multiple.png" alt="Bookmark" />
+            <img src="./icons/delete-forever.png" alt="delete" />
+            <img src="./icons/share-variant.png" alt="share" />
+          </div>
         </div>
         <div class="block">
           <h3>Ad Blocker</h3>
@@ -65,6 +112,11 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
             sapiente sint consequuntur nobis eum rem!
           </p>
+          <div>
+            <img src="./icons/bookmark-multiple.png" alt="Bookmark" />
+            <img src="./icons/delete-forever.png" alt="delete" />
+            <img src="./icons/share-variant.png" alt="share" />
+          </div>
         </div>
         <div class="block">
           <h3>Less Cool Project</h3>
@@ -72,6 +124,11 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Reprehenderit beatae reiciendis provident, vitae laborum commodi!
           </p>
+          <div>
+            <img src="./icons/bookmark-multiple.png" alt="Bookmark" />
+            <img src="./icons/delete-forever.png" alt="delete" />
+            <img src="./icons/share-variant.png" alt="share" />
+          </div>
         </div>
         <div class="block">
           <h3>Easy Peasy App</h3>
@@ -79,6 +136,11 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
             fugit velit ut, excepturi architecto ducimus?
           </p>
+          <div>
+            <img src="./icons/bookmark-multiple.png" alt="Bookmark" />
+            <img src="./icons/delete-forever.png" alt="delete" />
+            <img src="./icons/share-variant.png" alt="share" />
+          </div>
         </div>
         <div class="block">
           <h3>Money Maker</h3>
@@ -86,6 +148,11 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
             illum nam magnam corporis, placeat sed?
           </p>
+          <div>
+            <img src="./icons/bookmark-multiple.png" alt="Bookmark" />
+            <img src="./icons/delete-forever.png" alt="delete" />
+            <img src="./icons/share-variant.png" alt="share" />
+          </div>
         </div>
       </div>
     </div>
@@ -99,7 +166,7 @@
             velit repellat consequatur, fugit ullam exercitationem.
           </p>
         </div>
-        <hr>
+        <hr />
         <div class="second">
           <h3>Community Share Day</h3>
           <p>
@@ -107,7 +174,7 @@
             perferendis repudiandae porro. Quasi, perferendis voluptas.
           </p>
         </div>
-        <hr>
+        <hr />
         <div class="third">
           <h3>Updated Privacy Policy</h3>
           <p>
@@ -118,27 +185,27 @@
       </div>
     </div>
     <div id="rightSidebarLow">
-        <div class="trending">
-            <h3>Trending</h3>
+      <div class="trending">
+        <h3>Trending</h3>
+      </div>
+      <div class="extContain">
+        <div class="external">
+          <h4>@tegan</h4>
+          <p>World Peace Builder</p>
         </div>
-        <div class="extContain">
-            <div class="external">
-              <h4>@tegan</h4>
-              <p>World Peace Builder</p>
-            </div>
-            <div class="external">
-              <h4>@morgan</h4>
-              <p>Super Cool Project</p>
-            </div>
-            <div class="external">
-              <h4>@kendall</h4>
-              <p>Life Changing App</p>
-            </div>
-            <div class="external">
-              <h4>@alex</h4>
-              <p>No Traffic Maker</p>
-            </div>
+        <div class="external">
+          <h4>@morgan</h4>
+          <p>Super Cool Project</p>
         </div>
+        <div class="external">
+          <h4>@kendall</h4>
+          <p>Life Changing App</p>
+        </div>
+        <div class="external">
+          <h4>@alex</h4>
+          <p>No Traffic Maker</p>
+        </div>
+      </div>
     </div>
   </body>
   <script src="js.js"></script>

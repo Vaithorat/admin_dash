@@ -1,6 +1,7 @@
 @import url("https://css.gg/home-alt.css");
 
 body {
+  font-family: sans-serif;
   display: grid;
   grid-template-areas:
     "leftSidebar top top top top"
@@ -14,6 +15,12 @@ body {
   padding: 0;
   overflow: hidden;
 }
+.profile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
 #leftSidebar {
   grid-area: leftSidebar;
   display: flex;
@@ -21,13 +28,21 @@ body {
   gap: 30px;
   background-color: #0b3c50;
   color: white;
+  flex-shrink: 2;
   width: 15vw;
   height: 100%;
 }
-#leftSidebar > .icon{
-    display: grid;
-    grid-area: 1fr 1fr;
-    justify-content: space-evenly;
+#leftSidebar .icon {
+  display: flex;
+  justify-content: start;
+  gap: 1vw;
+  padding-left: 1vw;
+}
+#leftSidebar .dash {
+  display: flex;
+  font-size: 32px;
+  justify-content: space-evenly;
+  padding: 1vw;
 }
 #leftSidebar > .tabs {
   font-size: xx-large;
@@ -57,8 +72,18 @@ body {
   grid-area: main;
   background-color: #e2e8f0;
 }
+.block > div {
+  display: flex;
+  position: absolute;
+  right: 1.5vw;
+  bottom: 2vh;
+  flex-shrink: 2;
+  gap: 1.5vw;
+  /* border: 2px solid black; */
+}
 #main > .mainContain {
   height: 82vh;
+  flex-shrink: 2;
   display: grid;
   padding: 0;
   grid-template: 1fr 1fr 1fr/1fr 1fr;
@@ -73,6 +98,8 @@ body {
   /* border: 2px solid black; */
   margin: 20px;
   padding: 20px;
+  flex-shrink: 2;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -99,8 +126,8 @@ body {
   justify-content: space-evenly;
   flex-direction: column;
 }
-#rightSidebarTop  p{
-    color: rgb(119, 119, 119);
+#rightSidebarTop p {
+  color: rgb(119, 119, 119);
 }
 #rightSidebarTop > .announce {
   padding: 15px;
@@ -124,9 +151,9 @@ body {
   justify-content: space-evenly;
   flex-direction: column;
 }
-#rightSidebarLow p{
-    font-size: 14px;
-    color: rgb(119, 119, 119);
+#rightSidebarLow p {
+  font-size: 14px;
+  color: rgb(119, 119, 119);
 }
 #top {
   grid-area: top;
@@ -142,8 +169,19 @@ body {
   margin-left: 200px;
   height: 3vh;
   border-radius: 20px;
-  background-color: #e2e8f0 ;
+  background-color: #e2e8f0;
   border: none;
+}
+#top > .search{
+  display: flex;
+  align-items: center;
+  gap: 200px;
+}
+.search > .mag{
+  display: flex;
+  position: absolute;
+  margin-left: 9vw;
+  /* border: 2px solid black; */
 }
 #top > .profContain {
   display: flex;
@@ -151,18 +189,20 @@ body {
   align-items: center;
   margin: 0px 150px;
 }
-.new, .upload, .share{
-height: 40px;
-width: 100px;
-border-radius: 20px;
-background-color: #0b3c50;
-color: white;
-font-size: 1rem;
-font-weight: bolder;
-border: none;
-margin: 10px;
+.new,
+.upload,
+.share {
+  height: 40px;
+  width: 100px;
+  border-radius: 20px;
+  background-color: #0b3c50;
+  color: white;
+  font-size: 1rem;
+  font-weight: bolder;
+  border: none;
+  margin: 10px;
 }
 
-#top >.buttons{
-    gap: 20px;
+#top > .buttons {
+  gap: 20px;
 }
